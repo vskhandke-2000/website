@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>GDP Pediction of India</title>
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+
+	<!-- Google Font -->
+	<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Roboto:400,100,300,500">
+
+	<!-- Font Css -->
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+
+	<!-- Custom CSS -->
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+	<!-- Animation Css -->
+	<link rel="stylesheet" href="css/animate.css">
+
+
+</head>
+<body>
+<!-- Header -->
+<div class="header-div">
+
+<nav class="navbar navbar-default">
+  <div class="container">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header logo-div bounceInLeft wow" data-wow-duration="2s">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">Details</a>
+    </div>
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse top-right-menu-ul bounceInRight wow" id="bs-example-navbar-collapse-1" data-wow-duration="4s">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#Factors">Information about factors</a></li>
+        <li><a href="#Dataset">Dataset</a></li>
+        <li><a href="#Chart">GDP Chart</a></li>
+		<li><a href='#Next' onclick="window.location.href='app.py'">Next Page</a></li>
+      </ul>
+    </div><!-- End navbar-collapse -->
+  </div><!-- End container -->
+</nav>
+
+<div class="container wow bounceInDown" data-wow-duration="5s">
+	<div class="row">
+		<div class="col-md-offset-2 col-md-8 text-center slide-text">
+			<h2>How does prediction take place?</h2>
+			<p>We get the output of an algorithm after it has been trained on a historical dataset and applied to new data when forecasting the likelihood of a particular outcome, such as % of population growth. The algorithm will generate probable values for an unknown variable for each record in the new data, allowing the model builder to identify what that value will most likely be. Random Forest is a popular machine learning algorithm that belongs to the supervised learning technique. It can be used for both Classification and Regression problems in ML. It is based on the concept of ensemble learning, which is a process of combining multiple classifiers to solve a complex problem and to improve the performance of the model which why we have used it in our model too.</p>
+		</div><!-- End col-md-8-->
+		<div class="col-md-offset-2"></div><!-- End col-md-offset-2 -->
+	</div><!-- End Row -->
+</div><!-- End Contanier -->
+
+</div>
+<!-- Services -->
+
+<class="container" id="Factors">
+	<div class="row">
+		<div class="col-md-12">
+			<div class="main_heading">
+				<h1>Factors</h1>
+				<div  class="text-center"><span class="underline"></span></div>
+			</div>
+		</div><!-- End col-md-12 -->
+	</div><!-- End row -->
+
+	<div class="row">
+		<div class="services-box">
+			<i class="fa fa-cart-arrow-down fa-border"></i>
+			<h4>Import</h4>
+			<p>It contains the total amount of goods produced abroad but sold domestically per year in millions.</p>
+      <p>In dataset it is the total goods imported in that year in millions</p>
+		</div>
+	</div><!-- End col-md-4-->
+	<div class="row">
+		<div class="services-box">
+			<i class="fa fa-industry fa-border"></i>
+			<h4>Industrial production</h4>
+			<p>It contains the total amount of goods produced domestically and sold abroad per year in millions.</p>
+      <p>In dataset it is the total goods produced in millions in a year</p>
+		</div>
+	</div><!-- End col-md-4-->
+	<div class="row">
+		<div class="services-box">
+			<i class="fa fa-credit-card fa-border"></i>
+			<h4>Inflation rate</h4>
+			<p>Inflation refers to an overall increase in the Consumer Price Index (CPI), which is a weighted average of prices for different goods.</p>
+      <p>In dataset it is the % of inflation rate increased with respect to previous year</p>		
+    </div>
+	</div><!-- End col-md-4-->
+	<div class="row">
+		<div class="services-box">
+			<i class="fa fa-bank fa-border"></i>
+			<h4>Exchange rate</h4>
+			<p>It is value of one currency for the purpose of conversion to another and in this case USD to Rupees.</p>
+      <p>In dataset it is the USD to Rupee exchange rate in that year.</p>
+		</div>
+	</div><!-- End col-md-4-->
+	<div class="row">
+		<div class="services-box">
+			<i class="fa fa-area-chart fa-border"></i>
+			<h4>Population Growth</h4>
+			<p>Population growth is the increase in the number of individuals in a specific country per year.</p>
+      <p>In dataset it is the % of population increased compared to previous year.</p>
+		</div>
+	</div><!-- End col-md-4-->
+	<div class="row">
+		<div class="services-box">
+			<i class="fa fa-group fa-border"></i>
+			<h4>Unemployment rate</h4>
+			<p>It reflects the inability of an economy to generate employment for those persons who want to work but are not doing so.</p>
+      <p>In dataset it is the % of unemployed people in that specific year.</p>
+		</div>
+	</div><!-- End col-md-4-->
+	<div class="row">
+		<div class="services-box">
+			<i class="fa fa-ship fa-border"></i>
+			<h4>Export</h4>
+			<p>It contains the total amount of goods produced domestically and sold abroad per year in millions.</p>
+      <p>In dataset it is the total goods exported in that year in millions.</p>
+		</div>
+	</div><!-- End col-md-4-->
+	<div class="row">
+		<div class="services-box">
+			<i class="fa fa-line-chart fa-border"></i>
+			<h4>Stock market sales</h4>
+			<p>It refers to the collection of markets and exchanges where regular activities of buying,selling,and issuance of shares of companies take place.</p>
+      <p>In dataset it is the % of stock market sales in that year.</p>
+		</div>
+	</div><!-- End col-md-4-->
+    <div class="row">
+		<div class="services-box">
+			<i class="fa fa-balance-scale fa-border"></i>
+			<h4>Sensex rate</h4>
+			<p>Sensex is the benchmark index of India's BSE and is comprised of 30 of the largest and most actively-traded stocks.</p>
+      <p>In dataset it is the Gain or loss of sensex in that specific year.</p>
+		</div>
+    </div>
+</class=><!-- End container -->
+
+
+<div>
+  <div class="row">
+  <div class="text-center"><span class="underline"></span></div>
+  </div>
+</div>
+
+<div class="container" id="Dataset">
+  <div class="row">
+    <div class="main_heading" border="thick">
+      <h1>Dataset Created</h1>
+      <div class="text-center"><span class="underline"></span></div>
+    </div>
+    <img src="datasetimage.jpg" width="1150" height="800">
+	<a href="datasetimage.jpg" text-align="center">Click here in case the dataset image is not visible</a>
+  </div>
+</div>      
+
+<div>
+  <div class="row">
+  <div class="text-center"><span class="underline"></span></div>
+  </div>
+</div>
+
+<div class="container" id="Chart"> 
+ <div class="row">
+   <div class="main_heading" bor>
+     <h1>GDP growth chart from 1991 to 2019</h1>
+     <div class="text-center"><span class="underline"></span></div> 
+  </div>
+  <img src="chart.jpeg" width="1150" height="800">
+  <a href="chart.jpeg">Click here in case the chart is not visible</a>
+</div>   
+<!-- End Call to Action -->
+
+<!-- Footer -->
+<footer>
+    <div class="container">
+    	<div class="row">
+            <div class="col-sm-12 footer-social">
+            	<a href="#"><i class="fa fa-facebook"></i></a>
+		    	<a href="#"><i class="fa fa-dribbble"></i></span></a>
+		        <a href="#"><i class="fa fa-twitter"></i></a>            	
+            	<a href="#"><i class="fa fa-instagram"></i></a>
+            	<a href="#"><i class="fa fa-google-plus"></i></a>
+            	<a href="#"><i class="fa fa-pinterest"></i></a>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- End Footer -->
+
+
+<script type="text/javascript" src="js/jquery-main.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script src="js/wow.min.js"></script>
+
+<script>
+	new WOW().init();
+</script>
+
+</body>
+</html>
